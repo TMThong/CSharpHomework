@@ -15,7 +15,7 @@ namespace CSharpHomework
             SetUTF8Console();
             try
             {
-                int homeworkId = "Nhập câu :".rInt32Line();
+                int homeworkId = "Nhập câu (nghĩa là câu số mấy):".rInt32Line();
                 Type typeClassHomework = Type.GetType($"CSharpHomework.Homework.HW{homeworkId}");
                 BaseHomework baseHomework = (BaseHomework)typeClassHomework.GetConstructor(new Type[] { }).Invoke(new object[] { });
                 baseHomework.Load();

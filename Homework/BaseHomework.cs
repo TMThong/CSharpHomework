@@ -10,6 +10,11 @@ namespace CSharpHomework.Homework
     {
         public abstract void Load();
         public abstract void Math();
-        public abstract override string ToString();
+        public override string ToString()
+        {
+            return MathString;
+        }
+
+        public string MathString = "Ops!!! Chương trình chưa tính toán !!!";
     }
 }

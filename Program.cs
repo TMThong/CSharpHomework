@@ -13,12 +13,20 @@ namespace CSharpHomework
         static void Main(string[] args)
         {
             SetUTF8Console();
-            int homeworkId = "Nhập câu :".rInt32Line();
-            Type typeClassHomework = Type.GetType($"CSharpHomework.Homework.HW{homeworkId}");
-            BaseHomework baseHomework = (BaseHomework)typeClassHomework.GetConstructor(new Type[] { }).Invoke(new object[] { });
-            baseHomework.Load();
-            baseHomework.Math();
-            baseHomework.ToString().wLine();
+            try
+            {
+                int homeworkId = "Nhập câu :".rInt32Line();
+                Type typeClassHomework = Type.GetType($"CSharpHomework.Homework.HW{homeworkId}");
+                BaseHomework baseHomework = (BaseHomework)typeClassHomework.GetConstructor(new Type[] { }).Invoke(new object[] { });
+                baseHomework.Load();
+                baseHomework.Math();
+                baseHomework.ToString().wLine();
+            }
+            catch
+            (Exception ex)
+            {
+                "Bạn nhập sai cú pháp, ấn phím bất kỳ để kết thúc.".wLine();
+            }
             Console.ReadKey();
         }
     }

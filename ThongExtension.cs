@@ -36,6 +36,11 @@ namespace CSharpHomework
             return int.Parse(text.rLine());
         }
 
+        public static float rFloatLine(this string text)
+        {
+            return float.Parse(text.rLine());
+        }
+
         public static void ShowCredit()
         {
             "*****************************".wLine();

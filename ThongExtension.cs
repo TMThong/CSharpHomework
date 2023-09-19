@@ -31,6 +31,11 @@ namespace CSharpHomework
             return Console.ReadLine();
         }
 
+        public static int rInt32Line(this string text)
+        {
+            return int.Parse(text.rLine());
+        }
+
         public static void ShowCredit()
         {
             "*****************************".wLine();

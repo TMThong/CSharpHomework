@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpHomework.Homework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,12 @@ namespace CSharpHomework
         static void Main(string[] args)
         {
             SetUTF8Console();
+            int homeworkId = "Nhập câu :".rInt32Line();
+            Type typeClassHomework = Type.GetType($"CSharpHomework.Homework.HW{homeworkId}");
+            BaseHomework baseHomework = (BaseHomework)typeClassHomework.GetConstructor(new Type[] { }).Invoke(new object[] { });
+            baseHomework.Load();
+            baseHomework.Math();
+            baseHomework.ToString().wLine();
             Console.ReadKey();
         }
     }

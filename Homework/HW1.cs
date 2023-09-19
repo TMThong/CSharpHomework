@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpHomework.Homework
 {
-    internal class HW1 : BaseHomework
+    public class HW1 : BaseHomework
     {
         public override void Load()
         {
@@ -20,7 +20,7 @@ namespace CSharpHomework.Homework
 
         public override string ToString()
         {
-            return null;
+            return "test";
         }
     }
 }

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CSharpHomework.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,6 +49,11 @@
     <Compile Include="Homework\BaseHomework.cs" />
     <Compile Include="Homework\HW1.cs" />
     <Compile Include="Homework\HW2.cs" />
+    <Compile Include="Homework\HW3.cs" />
+    <Compile Include="Homework\HW4.cs" />
+    <Compile Include="Homework\HW5.cs" />
+    <Compile Include="Homework\HW6.cs" />
+    <Compile Include="Homework\HW7.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThongExtension.cs" />

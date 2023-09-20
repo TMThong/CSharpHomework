@@ -12,16 +12,18 @@ namespace CSharpHomework.Homework
 
         public override void Load()
         {
-            a = "Nhập cạnh a:".rInt32Line();
-            b = "Nhập cạnh b:".rInt32Line();
-            c = "Nhập cạnh c:".rInt32Line();
+            a = "Nhap canh a:".rInt32Line();
+            b = "Nhap canh b:".rInt32Line();
+            c = "Nhap canh c:".rInt32Line();
         }
 
         public override void Math()
         {
-
+            if (a == b && b == c) MathString = "Tam giac deu";
+            else if ((a == b || b == c || c == a) && (System.Math.Pow(a, 2) == System.Math.Pow(b, 2) + System.Math.Pow(c, 2)) || (System.Math.Pow(c, 2) == System.Math.Pow(b, 2) + System.Math.Pow(a, 2)) || (System.Math.Pow(b, 2) == System.Math.Pow(a, 2) + System.Math.Pow(c, 2))) MathString = "Tam giac vuong can";
+            else if (a == b || b == c || c == a) MathString = "Tam giac can";
+            else if ((System.Math.Pow(a, 2) == System.Math.Pow(b, 2) + System.Math.Pow(c, 2)) || (System.Math.Pow(c, 2) == System.Math.Pow(b, 2) + System.Math.Pow(a, 2)) || (System.Math.Pow(b, 2) == System.Math.Pow(a, 2) + System.Math.Pow(c, 2))) MathString = "Tam giac vuong";
+            else MathString = "Tam giac thuong";
         }
-
-       
     }
 }

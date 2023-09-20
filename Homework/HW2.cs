@@ -9,14 +9,13 @@ namespace CSharpHomework.Homework
     public class HW2 : BaseHomework
     {
 
-        private double a, b, c, x;
+        private double a, b, c; 
 
         public override void Load()
         {
-            a = "Nhập cạnh a:".rFloatLine();
-            b = "Nhập cạnh b:".rFloatLine();
-            c = "Nhập cạnh c:".rFloatLine();
-            x = "Nhập cạnh x:".rFloatLine();
+            a = "Nhap a:".rFloatLine();
+            b = "Nhap b:".rFloatLine();
+            c = "Nhap c:".rFloatLine();
         }
 
         public override void Math()
@@ -26,16 +25,16 @@ namespace CSharpHomework.Homework
             {
                 double x1 = (-b + System.Math.Sqrt(delta)) / (2 * a);
                 double x2 = (-b - System.Math.Sqrt(delta)) / (2 * a);
-                this.MathString = $"Phương trình có 2 nghiệm x1={x1},x2={x2}";
+                this.MathString = $"Pt co 4 nghiem x1={System.Math.Pow(x1 , 2)},x2={System.Math.Pow(x2, 2)} , x3 ={x1}, x4 = {-x1}";
             }
             else if(delta < 0)
             {
-                this.MathString = "Phương trình vô nghiệm";
+                this.MathString = "Pt vo nghiem";
             }
             else
             {
                 double x1 = (-b + System.Math.Sqrt(delta)) / (2 * a);
-                this.MathString = $"Phương trình có 2 nghiệm kép = {x1}";
+                this.MathString = $"Pt co nghiem kep = {System.Math.Pow(x1, 2)}";
             }
         }
     }

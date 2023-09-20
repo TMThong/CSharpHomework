@@ -12,8 +12,33 @@ namespace CSharpHomework
         {
             InputEncoding = Encoding.UTF8;
             OutputEncoding = Encoding.UTF8;
-            ShowCredit();
+
         }
+
+        public static bool IsPrime(this int value)
+        {
+            if (value < 2) return false;
+
+            for (int i = 2; i < value; i++)
+            {
+                if (value % 2 == 0) return false;
+            }
+
+            return true;
+        }
+
+
+        public static bool IsSquare(this int value)
+        {
+            return Math.Sqrt(value) % 1 == 0 && value > 0;
+        }
+
+        public static bool IsPerfectNumber(this int value)
+        {
+            if (value <= 0) return false;
+            return false;
+        }
+
 
         public static void wLine(this string text)
         {

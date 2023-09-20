@@ -15,6 +15,6 @@ namespace CSharpHomework.Homework
             return MathString;
         }
 
-        public string MathString = "Ops!!! Chương trình chưa tính toán !!!";
+        public string MathString = "Ops!!! Chuong trinh chua tinh toan !!!";
     }
 }

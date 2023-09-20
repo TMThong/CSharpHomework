@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpHomework.Homework
 {
+    /// <summary>
+    /// Author - Trần Minh Thông
+    /// Bài 11
+    /// </summary>
     public class THW11 : THW1
     {
         public override void Math()

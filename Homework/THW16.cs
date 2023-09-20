@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpHomework.Homework
 {
+    /// <summary>
+    /// Author - Trần Minh Thông
+    /// Bài 16
+    /// </summary>
     public class THW16 : BaseHomework
     {
 

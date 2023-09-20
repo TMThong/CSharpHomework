@@ -8,7 +8,7 @@ namespace CSharpHomework.Homework
 {
     /// <summary>
     /// Author - Trần Minh Thông
-    /// Bài 5
+    /// Bài 6
     /// </summary>
     public class THW6 : THW1
     {

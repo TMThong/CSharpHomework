@@ -16,7 +16,7 @@ namespace CSharpHomework
             try
             {
                 int homeworkId = "Nhap cau (nghia la cau so):".rInt32Line();
-                Type typeClassHomework = Type.GetType($"CSharpHomework.Homework.HW{homeworkId}");
+                Type typeClassHomework = Type.GetType($"CSharpHomework.Homework.THW{homeworkId}");
                 BaseHomework baseHomework = (BaseHomework)typeClassHomework.GetConstructor(new Type[] { }).Invoke(new object[] { });
                 baseHomework.Load();
                 baseHomework.Math();
@@ -25,6 +25,7 @@ namespace CSharpHomework
             catch
             (Exception ex)
             {
+                throw ex;
                 "Nhap sai cu phap.".wLine();
             }
             Console.ReadKey();
